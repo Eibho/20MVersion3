@@ -55,7 +55,6 @@ public class EnableDisable : MonoBehaviour
         if(coolDownTimer == 0)
         {
             sun.SetActive(true);
-          
             InputDetectionRightShift();
         }
     }
@@ -72,7 +71,6 @@ public class EnableDisable : MonoBehaviour
             {
                 RenderSettings.skybox = daySky;
                 nightPP.enabled = false;
-                AnimateBar();
                 dayObjectBool = true;
                 nightObjectBool = false;
                 dayObject.SetActive(true);
@@ -125,4 +123,6 @@ public class EnableDisable : MonoBehaviour
         LeanTween.scaleX(bar, 1,time);
 
     }
+    
+
 }
