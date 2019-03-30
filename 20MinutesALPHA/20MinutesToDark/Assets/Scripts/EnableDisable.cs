@@ -82,6 +82,20 @@ public class EnableDisable : MonoBehaviour
                
                 StartCoroutine(ChangeToNight());
             }
+
+             else if(dayObjectBool == true)
+            {
+
+                RenderSettings.skybox = nightSky;
+
+                nightPP.enabled = true;
+                dayObjectBool = false;
+                nightObjectBool = true;
+                dayObject.SetActive(false);
+                nightObject.SetActive(true);
+                coolDownTimer = coolDown;
+                sun.SetActive(false);
+            }
         }
     }
 
@@ -92,15 +106,14 @@ public class EnableDisable : MonoBehaviour
 
         RenderSettings.skybox = nightSky;
 
-       nightPP.enabled = true;
-        dayObjectBool = false;
+            nightPP.enabled = true;
+            dayObjectBool = false;
             nightObjectBool = true;
             dayObject.SetActive(false);
             nightObject.SetActive(true);
             coolDownTimer = coolDown;
             sun.SetActive(false);
-          
-        
+         
     }
     
     IEnumerator AnimateBar ()
