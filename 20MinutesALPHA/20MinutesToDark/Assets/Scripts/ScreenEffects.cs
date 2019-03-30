@@ -7,7 +7,7 @@ public class ScreenEffects : MonoBehaviour
 {
     private GlitchEffect glitch;
 
-   
+    EnableDisable enable;
 
     public Transform monster;
 
@@ -18,6 +18,7 @@ public class ScreenEffects : MonoBehaviour
     {
         glitch = GetComponent<GlitchEffect>();
         glitch.GetComponent<GlitchEffect>().enabled = false;
+        enable = FindObjectOfType<EnableDisable>();
         
     }
 
@@ -39,11 +40,13 @@ public class ScreenEffects : MonoBehaviour
         }
         else
             glitch.GetComponent<GlitchEffect>().enabled = false;
-    }
 
-    void PostProcessing()
-    {
+        if (enable.dayObjectBool == true)
+        {
+            glitch.GetComponent<GlitchEffect>().enabled = false;
+        }
+
         
     }
-
+    
 }

@@ -25,11 +25,7 @@ public class EnableDisable : MonoBehaviour
     //skybox
     public Material nightSky;
     public Material daySky;
-
     
-
-    
-
     void Start()
     {
         nightObjectBool = true;
@@ -59,30 +55,11 @@ public class EnableDisable : MonoBehaviour
         if(coolDownTimer == 0)
         {
             sun.SetActive(true);
-            InputDetectionLeftShift();
+          
             InputDetectionRightShift();
         }
     }
     
-
-   void InputDetectionLeftShift()
-    {
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            if (dayObjectBool == false)
-            {
-                RenderSettings.skybox = daySky;
-                AnimateBar();
-                dayObjectBool = true;
-                nightObjectBool = false;
-                dayObject.SetActive(true);
-                nightObject.SetActive(false);
-                timer.SetActive(true);
-                StartCoroutine(AnimateBar());
-                StartCoroutine(ChangeToNight());
-            }
-        }
-    }
     
     void InputDetectionRightShift()
     {
