@@ -19,6 +19,8 @@ public class MonsterRespawn : MonoBehaviour
         {
             Debug.Log("MonsterRespawn");
 
+            died = true;
+
             StartCoroutine(Wait());
         }
     }
@@ -27,7 +29,7 @@ public class MonsterRespawn : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
 
-        died = true;
+        died = false;
 
         monster.transform.position = monsterSpawn.transform.position;
         player.transform.position = playerSpawn.transform.position;

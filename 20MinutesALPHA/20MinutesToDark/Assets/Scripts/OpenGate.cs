@@ -25,7 +25,6 @@ public class OpenGate : MonoBehaviour
         {
             anim.SetBool("OpenGate",true);
             audioSource.PlayOneShot(openGate);
-            
         }
     }
 

@@ -8,7 +8,7 @@ public class PickUp : MonoBehaviour
     public GameObject pickUpKey;
     public GameObject spotLight;
 
-    MonsterRespawn deathScript;
+    MonsterRespawn respawn;
 
     public AudioClip collectKey;
 
@@ -22,12 +22,12 @@ public class PickUp : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
 
-        deathScript = FindObjectOfType<MonsterRespawn>();
+        respawn = FindObjectOfType<MonsterRespawn>();
     }
 
     private void Update()
     {
-        if(deathScript.died == true)
+        if(respawn.died == true)
         {
             PlayerKey.SetActive(false);
             pickUpKey.SetActive(true);
@@ -37,7 +37,7 @@ public class PickUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Key" && deathScript.died == false)
+        if(other.gameObject.tag == "Key" && respawn.died == false)
         {
             PlayerKey.SetActive(true);
             pickUpKey.SetActive(false);

@@ -32,16 +32,7 @@ public class MonsterController : MonoBehaviour
         Sprint();
         
     }
-
-    // Update is called once per frame
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, followRadius);
-
-        
-    }
-
+    
     void Sprint()
     {
         if (Input.GetKey(KeyCode.LeftShift))
