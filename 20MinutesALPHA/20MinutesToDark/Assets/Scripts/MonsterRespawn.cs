@@ -12,6 +12,15 @@ public class MonsterRespawn : MonoBehaviour
     public GameObject monster;
     public GameObject player;
 
+    public GameObject cooldownUI;
+    public GameObject deathUI;
+
+
+    private void Start()
+    {
+        cooldownUI.SetActive(true);
+        deathUI.SetActive(false);
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -19,7 +28,12 @@ public class MonsterRespawn : MonoBehaviour
         {
             Debug.Log("MonsterRespawn");
 
-            StartCoroutine(Wait());
+            cooldownUI.SetActive(false);
+            deathUI.SetActive(true);
+
+            died = true;
+
+            //StartCoroutine(Wait());
         }
     }
 

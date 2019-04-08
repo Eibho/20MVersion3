@@ -9,17 +9,26 @@ public class Respawn : MonoBehaviour
     public Transform respawnPoint;
     public GameObject player;
 
+    public GameObject cooldownUI;
+    public GameObject deathUI;
 
+
+    private void Start()
+    {
+        cooldownUI.SetActive(true);
+        deathUI.SetActive(false);
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Enemy")
         {
             Debug.Log("Respawn");
+            cooldownUI.SetActive(false);
+            deathUI.SetActive(true);
+            //StartCoroutine(Wait());
 
-            StartCoroutine(Wait());
 
-            
         }
     }
 
