@@ -25,7 +25,10 @@ public class EnableDisable : MonoBehaviour
     //skybox
     public Material nightSky;
     public Material daySky;
+
+    MonsterRespawn respawn;
     
+
     void Start()
     {
         nightObjectBool = true;
@@ -35,6 +38,7 @@ public class EnableDisable : MonoBehaviour
         nightPP.enabled = true;
         //skybox
         RenderSettings.skybox = nightSky;
+        
         
     }
 
@@ -57,6 +61,9 @@ public class EnableDisable : MonoBehaviour
             sun.SetActive(true);
             InputDetectionRightShift();
         }
+
+
+
     }
     
     

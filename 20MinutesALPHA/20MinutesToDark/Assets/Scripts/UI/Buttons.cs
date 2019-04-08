@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
-   public void Quit()
+  
+
+    public void Quit()
     {
         Application.Quit();
     }
@@ -14,6 +16,11 @@ public class Buttons : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(0);
+        // player.GetComponent<EnableDisable>().enabled = false;
+        // player.GetComponent<Movement>().enabled = false;
+
+
+        
         Debug.Log("restart");
     }
 

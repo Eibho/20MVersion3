@@ -14,12 +14,13 @@ public class MonsterRespawn : MonoBehaviour
 
     public GameObject cooldownUI;
     public GameObject deathUI;
-
+    
 
     private void Start()
     {
         cooldownUI.SetActive(true);
         deathUI.SetActive(false);
+        died = false;
     }
 
     void OnTriggerEnter(Collider other)
