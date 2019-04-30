@@ -27,12 +27,18 @@ public class PickUp : MonoBehaviour
 
     private void Update()
     {
+        /*
         if(deathScript.died == true)
         {
             PlayerKey.SetActive(false);
             pickUpKey.SetActive(true);
             spotLight.SetActive(false);
         }
+        else
+        PlayerKey.SetActive(true);
+        pickUpKey.SetActive(false);
+        spotLight.SetActive(true);
+        */
     }
 
     private void OnTriggerEnter(Collider other)
