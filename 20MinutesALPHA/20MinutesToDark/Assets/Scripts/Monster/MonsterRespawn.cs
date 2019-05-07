@@ -32,6 +32,8 @@ public class MonsterRespawn : MonoBehaviour
             cooldownUI.SetActive(false);
             deathUI.SetActive(true);
 
+            Debug.Log("Monster collided with player");
+
             died = true;
 
             //StartCoroutine(Wait());

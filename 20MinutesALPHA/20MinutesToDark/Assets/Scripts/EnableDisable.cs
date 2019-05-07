@@ -9,6 +9,7 @@ public class EnableDisable : MonoBehaviour
     public GameObject dayObject;
     public GameObject nightObject;
     public GameObject sun;
+    
     public bool nightObjectBool;
     public bool dayObjectBool;
 
@@ -29,11 +30,13 @@ public class EnableDisable : MonoBehaviour
     MonsterRespawn respawn;
     
 
+
     void Start()
     {
         nightObjectBool = true;
         dayObjectBool = false;
         sun.SetActive(false);
+        
         //post processing
         nightPP.enabled = true;
         //skybox
@@ -73,7 +76,7 @@ public class EnableDisable : MonoBehaviour
         {
            
             Debug.Log("Click");
-         
+            //change to day
             if(dayObjectBool == false)
             {
                 RenderSettings.skybox = daySky;
@@ -83,6 +86,7 @@ public class EnableDisable : MonoBehaviour
                 dayObject.SetActive(true);
                 nightObject.SetActive(false);
                 timer.SetActive(true);
+                
                 StartCoroutine(AnimateBar());
                
                 StartCoroutine(ChangeToNight());
@@ -92,7 +96,7 @@ public class EnableDisable : MonoBehaviour
             {
 
                 RenderSettings.skybox = nightSky;
-
+                
                 nightPP.enabled = true;
                 dayObjectBool = false;
                 nightObjectBool = true;
