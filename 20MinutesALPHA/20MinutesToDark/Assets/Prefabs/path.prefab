@@ -366,7 +366,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5fd6a38970180934a9833f16005c7554, type: 2}
+  - {fileID: 2100000, guid: 4badd12cf847e604c9ac551a5c372215, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3174,7 +3174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5079417483626348673}
   m_Layer: 0
-  m_Name: Path2
+  m_Name: path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
