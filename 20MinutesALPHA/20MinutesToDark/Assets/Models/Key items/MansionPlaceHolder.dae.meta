@@ -34,6 +34,18 @@ ModelImporter:
     100056: Cylinder_001
     100058: //RootNode
     100060: Plane
+    100062: Chimney
+    100064: DoorLeft
+    100066: DoorRight_001
+    100068: Floor1
+    100070: Floor2
+    100072: MansionBottom
+    100074: MansionStairs
+    100076: MansionTop
+    100078: Roof
+    100080: TopWindowFrame
+    100082: TopWindowPanex1
+    100084: WindowPanex1
     400000: Cube
     400002: Cube_001
     400004: Cube_002
@@ -65,6 +77,18 @@ ModelImporter:
     400056: Cylinder_001
     400058: //RootNode
     400060: Plane
+    400062: Chimney
+    400064: DoorLeft
+    400066: DoorRight_001
+    400068: Floor1
+    400070: Floor2
+    400072: MansionBottom
+    400074: MansionStairs
+    400076: MansionTop
+    400078: Roof
+    400080: TopWindowFrame
+    400082: TopWindowPanex1
+    400084: WindowPanex1
     2100000: No Name
     2300000: Cube
     2300002: Cube_001
@@ -96,6 +120,18 @@ ModelImporter:
     2300054: Cylinder
     2300056: Cylinder_001
     2300058: Plane
+    2300060: Chimney
+    2300062: DoorLeft
+    2300064: DoorRight_001
+    2300066: Floor1
+    2300068: Floor2
+    2300070: MansionBottom
+    2300072: MansionStairs
+    2300074: MansionTop
+    2300076: Roof
+    2300078: TopWindowFrame
+    2300080: TopWindowPanex1
+    2300082: WindowPanex1
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -126,6 +162,18 @@ ModelImporter:
     3300054: Cylinder
     3300056: Cylinder_001
     3300058: Plane
+    3300060: Chimney
+    3300062: DoorLeft
+    3300064: DoorRight_001
+    3300066: Floor1
+    3300068: Floor2
+    3300070: MansionBottom
+    3300072: MansionStairs
+    3300074: MansionTop
+    3300076: Roof
+    3300078: TopWindowFrame
+    3300080: TopWindowPanex1
+    3300082: WindowPanex1
     4300000: Cube_024
     4300002: Cube_022
     4300004: Cube_021
@@ -156,6 +204,18 @@ ModelImporter:
     4300054: Cube_008
     4300056: Cube_010
     4300058: Cube_023
+    4300060: DoorRight_001
+    4300062: DoorLeft
+    4300064: TopWindowPanex1
+    4300066: MansionTop
+    4300068: MansionBottom
+    4300070: TopWindowFrame
+    4300072: WindowPanex1
+    4300074: Roof
+    4300076: MansionStairs
+    4300078: Floor1
+    4300080: Floor2
+    4300082: Chimney
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
