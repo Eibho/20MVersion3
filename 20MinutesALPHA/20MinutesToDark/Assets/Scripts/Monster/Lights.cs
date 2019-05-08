@@ -13,25 +13,39 @@ public class Lights : MonoBehaviour
     void Start()
     {
         monster = GameObject.FindGameObjectWithTag("Enemy");
-        this.anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Flicker();
+        //Flicker();
+       // anim.SetBool("isFlicker", false);
     }
 
     void Flicker()
     {
-        float distance = Vector3.Distance(monster.transform.position, transform.position);
+        
+        float distance = Vector3.Distance(transform.position, monster.transform.position);
 
-        if (distance < theDistance)
+        if (distance <= theDistance)
         {
             Debug.Log("Flicker");
-            this.anim.SetBool("isFlicker", true);
+            anim.SetBool("isFlicker", true);
         }
         else
-            this.anim.SetBool("isFlicker", false);
+            anim.SetBool("isFlicker", false);
+
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "Enemy")
+        {
+            Debug.Log("monster");
+            anim.SetBool("isFlicker", true);
+        }
+        else
+        anim.SetBool("isFlicker", false);
     }
 }
