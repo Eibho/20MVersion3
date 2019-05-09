@@ -14,6 +14,7 @@ public class Lights : MonoBehaviour
     {
         monster = GameObject.FindGameObjectWithTag("Enemy");
         anim = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
