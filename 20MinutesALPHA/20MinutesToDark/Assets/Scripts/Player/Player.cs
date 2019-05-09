@@ -48,14 +48,14 @@ public class Player : MonoBehaviour
         //sprint
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 8;
+            speed = 15;
         }
         else if (Input.GetKey(KeyCode.RightShift))
         {
-            speed = 8;
+            speed = 15;
         }
         else
-            speed = 5;
+            speed = 10;
 
 
         //check if on the ground
